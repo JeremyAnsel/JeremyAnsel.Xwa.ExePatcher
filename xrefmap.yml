@@ -143,22 +143,22 @@ references:
   fullName: JeremyAnsel.Xwa.ExePatcher.Patcher
   nameWithType: Patcher
 - uid: JeremyAnsel.Xwa.ExePatcher.Patcher.Apply(System.IO.Stream,System.Boolean)
-  name: Apply(Stream, bool)
+  name: Apply(Stream?, bool)
   href: api/JeremyAnsel.Xwa.ExePatcher.Patcher.html#JeremyAnsel_Xwa_ExePatcher_Patcher_Apply_System_IO_Stream_System_Boolean_
   commentId: M:JeremyAnsel.Xwa.ExePatcher.Patcher.Apply(System.IO.Stream,System.Boolean)
   name.vb: Apply(Stream, Boolean)
-  fullName: JeremyAnsel.Xwa.ExePatcher.Patcher.Apply(System.IO.Stream, bool)
+  fullName: JeremyAnsel.Xwa.ExePatcher.Patcher.Apply(System.IO.Stream?, bool)
   fullName.vb: JeremyAnsel.Xwa.ExePatcher.Patcher.Apply(System.IO.Stream, Boolean)
-  nameWithType: Patcher.Apply(Stream, bool)
+  nameWithType: Patcher.Apply(Stream?, bool)
   nameWithType.vb: Patcher.Apply(Stream, Boolean)
 - uid: JeremyAnsel.Xwa.ExePatcher.Patcher.Apply(System.String,System.Boolean)
-  name: Apply(string, bool)
+  name: Apply(string?, bool)
   href: api/JeremyAnsel.Xwa.ExePatcher.Patcher.html#JeremyAnsel_Xwa_ExePatcher_Patcher_Apply_System_String_System_Boolean_
   commentId: M:JeremyAnsel.Xwa.ExePatcher.Patcher.Apply(System.String,System.Boolean)
   name.vb: Apply(String, Boolean)
-  fullName: JeremyAnsel.Xwa.ExePatcher.Patcher.Apply(string, bool)
+  fullName: JeremyAnsel.Xwa.ExePatcher.Patcher.Apply(string?, bool)
   fullName.vb: JeremyAnsel.Xwa.ExePatcher.Patcher.Apply(String, Boolean)
-  nameWithType: Patcher.Apply(string, bool)
+  nameWithType: Patcher.Apply(string?, bool)
   nameWithType.vb: Patcher.Apply(String, Boolean)
 - uid: JeremyAnsel.Xwa.ExePatcher.Patcher.Apply*
   name: Apply
@@ -168,19 +168,22 @@ references:
   fullName: JeremyAnsel.Xwa.ExePatcher.Patcher.Apply
   nameWithType: Patcher.Apply
 - uid: JeremyAnsel.Xwa.ExePatcher.Patcher.CanBeApplied(System.IO.Stream,JeremyAnsel.Xwa.ExePatcher.Patch)
-  name: CanBeApplied(Stream, Patch)
+  name: CanBeApplied(Stream?, Patch?)
   href: api/JeremyAnsel.Xwa.ExePatcher.Patcher.html#JeremyAnsel_Xwa_ExePatcher_Patcher_CanBeApplied_System_IO_Stream_JeremyAnsel_Xwa_ExePatcher_Patch_
   commentId: M:JeremyAnsel.Xwa.ExePatcher.Patcher.CanBeApplied(System.IO.Stream,JeremyAnsel.Xwa.ExePatcher.Patch)
-  fullName: JeremyAnsel.Xwa.ExePatcher.Patcher.CanBeApplied(System.IO.Stream, JeremyAnsel.Xwa.ExePatcher.Patch)
-  nameWithType: Patcher.CanBeApplied(Stream, Patch)
+  name.vb: CanBeApplied(Stream, Patch)
+  fullName: JeremyAnsel.Xwa.ExePatcher.Patcher.CanBeApplied(System.IO.Stream?, JeremyAnsel.Xwa.ExePatcher.Patch?)
+  fullName.vb: JeremyAnsel.Xwa.ExePatcher.Patcher.CanBeApplied(System.IO.Stream, JeremyAnsel.Xwa.ExePatcher.Patch)
+  nameWithType: Patcher.CanBeApplied(Stream?, Patch?)
+  nameWithType.vb: Patcher.CanBeApplied(Stream, Patch)
 - uid: JeremyAnsel.Xwa.ExePatcher.Patcher.CanBeApplied(System.String,JeremyAnsel.Xwa.ExePatcher.Patch)
-  name: CanBeApplied(string, Patch)
+  name: CanBeApplied(string?, Patch?)
   href: api/JeremyAnsel.Xwa.ExePatcher.Patcher.html#JeremyAnsel_Xwa_ExePatcher_Patcher_CanBeApplied_System_String_JeremyAnsel_Xwa_ExePatcher_Patch_
   commentId: M:JeremyAnsel.Xwa.ExePatcher.Patcher.CanBeApplied(System.String,JeremyAnsel.Xwa.ExePatcher.Patch)
   name.vb: CanBeApplied(String, Patch)
-  fullName: JeremyAnsel.Xwa.ExePatcher.Patcher.CanBeApplied(string, JeremyAnsel.Xwa.ExePatcher.Patch)
+  fullName: JeremyAnsel.Xwa.ExePatcher.Patcher.CanBeApplied(string?, JeremyAnsel.Xwa.ExePatcher.Patch?)
   fullName.vb: JeremyAnsel.Xwa.ExePatcher.Patcher.CanBeApplied(String, JeremyAnsel.Xwa.ExePatcher.Patch)
-  nameWithType: Patcher.CanBeApplied(string, Patch)
+  nameWithType: Patcher.CanBeApplied(string?, Patch?)
   nameWithType.vb: Patcher.CanBeApplied(String, Patch)
 - uid: JeremyAnsel.Xwa.ExePatcher.Patcher.CanBeApplied*
   name: CanBeApplied
@@ -190,19 +193,22 @@ references:
   fullName: JeremyAnsel.Xwa.ExePatcher.Patcher.CanBeApplied
   nameWithType: Patcher.CanBeApplied
 - uid: JeremyAnsel.Xwa.ExePatcher.Patcher.IsApplied(System.IO.Stream,JeremyAnsel.Xwa.ExePatcher.Patch)
-  name: IsApplied(Stream, Patch)
+  name: IsApplied(Stream?, Patch?)
   href: api/JeremyAnsel.Xwa.ExePatcher.Patcher.html#JeremyAnsel_Xwa_ExePatcher_Patcher_IsApplied_System_IO_Stream_JeremyAnsel_Xwa_ExePatcher_Patch_
   commentId: M:JeremyAnsel.Xwa.ExePatcher.Patcher.IsApplied(System.IO.Stream,JeremyAnsel.Xwa.ExePatcher.Patch)
-  fullName: JeremyAnsel.Xwa.ExePatcher.Patcher.IsApplied(System.IO.Stream, JeremyAnsel.Xwa.ExePatcher.Patch)
-  nameWithType: Patcher.IsApplied(Stream, Patch)
+  name.vb: IsApplied(Stream, Patch)
+  fullName: JeremyAnsel.Xwa.ExePatcher.Patcher.IsApplied(System.IO.Stream?, JeremyAnsel.Xwa.ExePatcher.Patch?)
+  fullName.vb: JeremyAnsel.Xwa.ExePatcher.Patcher.IsApplied(System.IO.Stream, JeremyAnsel.Xwa.ExePatcher.Patch)
+  nameWithType: Patcher.IsApplied(Stream?, Patch?)
+  nameWithType.vb: Patcher.IsApplied(Stream, Patch)
 - uid: JeremyAnsel.Xwa.ExePatcher.Patcher.IsApplied(System.String,JeremyAnsel.Xwa.ExePatcher.Patch)
-  name: IsApplied(string, Patch)
+  name: IsApplied(string?, Patch?)
   href: api/JeremyAnsel.Xwa.ExePatcher.Patcher.html#JeremyAnsel_Xwa_ExePatcher_Patcher_IsApplied_System_String_JeremyAnsel_Xwa_ExePatcher_Patch_
   commentId: M:JeremyAnsel.Xwa.ExePatcher.Patcher.IsApplied(System.String,JeremyAnsel.Xwa.ExePatcher.Patch)
   name.vb: IsApplied(String, Patch)
-  fullName: JeremyAnsel.Xwa.ExePatcher.Patcher.IsApplied(string, JeremyAnsel.Xwa.ExePatcher.Patch)
+  fullName: JeremyAnsel.Xwa.ExePatcher.Patcher.IsApplied(string?, JeremyAnsel.Xwa.ExePatcher.Patch?)
   fullName.vb: JeremyAnsel.Xwa.ExePatcher.Patcher.IsApplied(String, JeremyAnsel.Xwa.ExePatcher.Patch)
-  nameWithType: Patcher.IsApplied(string, Patch)
+  nameWithType: Patcher.IsApplied(string?, Patch?)
   nameWithType.vb: Patcher.IsApplied(String, Patch)
 - uid: JeremyAnsel.Xwa.ExePatcher.Patcher.IsApplied*
   name: IsApplied
@@ -225,19 +231,22 @@ references:
   fullName: JeremyAnsel.Xwa.ExePatcher.Patcher.Patches
   nameWithType: Patcher.Patches
 - uid: JeremyAnsel.Xwa.ExePatcher.Patcher.Read(System.IO.Stream)
-  name: Read(Stream)
+  name: Read(Stream?)
   href: api/JeremyAnsel.Xwa.ExePatcher.Patcher.html#JeremyAnsel_Xwa_ExePatcher_Patcher_Read_System_IO_Stream_
   commentId: M:JeremyAnsel.Xwa.ExePatcher.Patcher.Read(System.IO.Stream)
-  fullName: JeremyAnsel.Xwa.ExePatcher.Patcher.Read(System.IO.Stream)
-  nameWithType: Patcher.Read(Stream)
+  name.vb: Read(Stream)
+  fullName: JeremyAnsel.Xwa.ExePatcher.Patcher.Read(System.IO.Stream?)
+  fullName.vb: JeremyAnsel.Xwa.ExePatcher.Patcher.Read(System.IO.Stream)
+  nameWithType: Patcher.Read(Stream?)
+  nameWithType.vb: Patcher.Read(Stream)
 - uid: JeremyAnsel.Xwa.ExePatcher.Patcher.Read(System.String)
-  name: Read(string)
+  name: Read(string?)
   href: api/JeremyAnsel.Xwa.ExePatcher.Patcher.html#JeremyAnsel_Xwa_ExePatcher_Patcher_Read_System_String_
   commentId: M:JeremyAnsel.Xwa.ExePatcher.Patcher.Read(System.String)
   name.vb: Read(String)
-  fullName: JeremyAnsel.Xwa.ExePatcher.Patcher.Read(string)
+  fullName: JeremyAnsel.Xwa.ExePatcher.Patcher.Read(string?)
   fullName.vb: JeremyAnsel.Xwa.ExePatcher.Patcher.Read(String)
-  nameWithType: Patcher.Read(string)
+  nameWithType: Patcher.Read(string?)
   nameWithType.vb: Patcher.Read(String)
 - uid: JeremyAnsel.Xwa.ExePatcher.Patcher.Read*
   name: Read
@@ -247,19 +256,22 @@ references:
   fullName: JeremyAnsel.Xwa.ExePatcher.Patcher.Read
   nameWithType: Patcher.Read
 - uid: JeremyAnsel.Xwa.ExePatcher.Patcher.Write(System.IO.Stream)
-  name: Write(Stream)
+  name: Write(Stream?)
   href: api/JeremyAnsel.Xwa.ExePatcher.Patcher.html#JeremyAnsel_Xwa_ExePatcher_Patcher_Write_System_IO_Stream_
   commentId: M:JeremyAnsel.Xwa.ExePatcher.Patcher.Write(System.IO.Stream)
-  fullName: JeremyAnsel.Xwa.ExePatcher.Patcher.Write(System.IO.Stream)
-  nameWithType: Patcher.Write(Stream)
+  name.vb: Write(Stream)
+  fullName: JeremyAnsel.Xwa.ExePatcher.Patcher.Write(System.IO.Stream?)
+  fullName.vb: JeremyAnsel.Xwa.ExePatcher.Patcher.Write(System.IO.Stream)
+  nameWithType: Patcher.Write(Stream?)
+  nameWithType.vb: Patcher.Write(Stream)
 - uid: JeremyAnsel.Xwa.ExePatcher.Patcher.Write(System.String)
-  name: Write(string)
+  name: Write(string?)
   href: api/JeremyAnsel.Xwa.ExePatcher.Patcher.html#JeremyAnsel_Xwa_ExePatcher_Patcher_Write_System_String_
   commentId: M:JeremyAnsel.Xwa.ExePatcher.Patcher.Write(System.String)
   name.vb: Write(String)
-  fullName: JeremyAnsel.Xwa.ExePatcher.Patcher.Write(string)
+  fullName: JeremyAnsel.Xwa.ExePatcher.Patcher.Write(string?)
   fullName.vb: JeremyAnsel.Xwa.ExePatcher.Patcher.Write(String)
-  nameWithType: Patcher.Write(string)
+  nameWithType: Patcher.Write(string?)
   nameWithType.vb: Patcher.Write(String)
 - uid: JeremyAnsel.Xwa.ExePatcher.Patcher.Write*
   name: Write
@@ -275,22 +287,22 @@ references:
   fullName: JeremyAnsel.Xwa.ExePatcher.ZtFile
   nameWithType: ZtFile
 - uid: JeremyAnsel.Xwa.ExePatcher.ZtFile.Apply(System.Byte[])
-  name: Apply(byte[])
+  name: Apply(byte[]?)
   href: api/JeremyAnsel.Xwa.ExePatcher.ZtFile.html#JeremyAnsel_Xwa_ExePatcher_ZtFile_Apply_System_Byte___
   commentId: M:JeremyAnsel.Xwa.ExePatcher.ZtFile.Apply(System.Byte[])
   name.vb: Apply(Byte())
-  fullName: JeremyAnsel.Xwa.ExePatcher.ZtFile.Apply(byte[])
+  fullName: JeremyAnsel.Xwa.ExePatcher.ZtFile.Apply(byte[]?)
   fullName.vb: JeremyAnsel.Xwa.ExePatcher.ZtFile.Apply(Byte())
-  nameWithType: ZtFile.Apply(byte[])
+  nameWithType: ZtFile.Apply(byte[]?)
   nameWithType.vb: ZtFile.Apply(Byte())
 - uid: JeremyAnsel.Xwa.ExePatcher.ZtFile.Apply(System.String)
-  name: Apply(string)
+  name: Apply(string?)
   href: api/JeremyAnsel.Xwa.ExePatcher.ZtFile.html#JeremyAnsel_Xwa_ExePatcher_ZtFile_Apply_System_String_
   commentId: M:JeremyAnsel.Xwa.ExePatcher.ZtFile.Apply(System.String)
   name.vb: Apply(String)
-  fullName: JeremyAnsel.Xwa.ExePatcher.ZtFile.Apply(string)
+  fullName: JeremyAnsel.Xwa.ExePatcher.ZtFile.Apply(string?)
   fullName.vb: JeremyAnsel.Xwa.ExePatcher.ZtFile.Apply(String)
-  nameWithType: ZtFile.Apply(string)
+  nameWithType: ZtFile.Apply(string?)
   nameWithType.vb: ZtFile.Apply(String)
 - uid: JeremyAnsel.Xwa.ExePatcher.ZtFile.Apply*
   name: Apply
@@ -313,22 +325,22 @@ references:
   fullName: JeremyAnsel.Xwa.ExePatcher.ZtFile.Comment
   nameWithType: ZtFile.Comment
 - uid: JeremyAnsel.Xwa.ExePatcher.ZtFile.Create(System.Byte[],System.Byte[])
-  name: Create(byte[], byte[])
+  name: Create(byte[]?, byte[]?)
   href: api/JeremyAnsel.Xwa.ExePatcher.ZtFile.html#JeremyAnsel_Xwa_ExePatcher_ZtFile_Create_System_Byte___System_Byte___
   commentId: M:JeremyAnsel.Xwa.ExePatcher.ZtFile.Create(System.Byte[],System.Byte[])
   name.vb: Create(Byte(), Byte())
-  fullName: JeremyAnsel.Xwa.ExePatcher.ZtFile.Create(byte[], byte[])
+  fullName: JeremyAnsel.Xwa.ExePatcher.ZtFile.Create(byte[]?, byte[]?)
   fullName.vb: JeremyAnsel.Xwa.ExePatcher.ZtFile.Create(Byte(), Byte())
-  nameWithType: ZtFile.Create(byte[], byte[])
+  nameWithType: ZtFile.Create(byte[]?, byte[]?)
   nameWithType.vb: ZtFile.Create(Byte(), Byte())
 - uid: JeremyAnsel.Xwa.ExePatcher.ZtFile.Create(System.String,System.String)
-  name: Create(string, string)
+  name: Create(string?, string?)
   href: api/JeremyAnsel.Xwa.ExePatcher.ZtFile.html#JeremyAnsel_Xwa_ExePatcher_ZtFile_Create_System_String_System_String_
   commentId: M:JeremyAnsel.Xwa.ExePatcher.ZtFile.Create(System.String,System.String)
   name.vb: Create(String, String)
-  fullName: JeremyAnsel.Xwa.ExePatcher.ZtFile.Create(string, string)
+  fullName: JeremyAnsel.Xwa.ExePatcher.ZtFile.Create(string?, string?)
   fullName.vb: JeremyAnsel.Xwa.ExePatcher.ZtFile.Create(String, String)
-  nameWithType: ZtFile.Create(string, string)
+  nameWithType: ZtFile.Create(string?, string?)
   nameWithType.vb: ZtFile.Create(String, String)
 - uid: JeremyAnsel.Xwa.ExePatcher.ZtFile.Create*
   name: Create
@@ -351,13 +363,13 @@ references:
   fullName: JeremyAnsel.Xwa.ExePatcher.ZtFile.FileName
   nameWithType: ZtFile.FileName
 - uid: JeremyAnsel.Xwa.ExePatcher.ZtFile.FromFile(System.String)
-  name: FromFile(string)
+  name: FromFile(string?)
   href: api/JeremyAnsel.Xwa.ExePatcher.ZtFile.html#JeremyAnsel_Xwa_ExePatcher_ZtFile_FromFile_System_String_
   commentId: M:JeremyAnsel.Xwa.ExePatcher.ZtFile.FromFile(System.String)
   name.vb: FromFile(String)
-  fullName: JeremyAnsel.Xwa.ExePatcher.ZtFile.FromFile(string)
+  fullName: JeremyAnsel.Xwa.ExePatcher.ZtFile.FromFile(string?)
   fullName.vb: JeremyAnsel.Xwa.ExePatcher.ZtFile.FromFile(String)
-  nameWithType: ZtFile.FromFile(string)
+  nameWithType: ZtFile.FromFile(string?)
   nameWithType.vb: ZtFile.FromFile(String)
 - uid: JeremyAnsel.Xwa.ExePatcher.ZtFile.FromFile*
   name: FromFile
@@ -367,11 +379,14 @@ references:
   fullName: JeremyAnsel.Xwa.ExePatcher.ZtFile.FromFile
   nameWithType: ZtFile.FromFile
 - uid: JeremyAnsel.Xwa.ExePatcher.ZtFile.FromStream(System.IO.Stream)
-  name: FromStream(Stream)
+  name: FromStream(Stream?)
   href: api/JeremyAnsel.Xwa.ExePatcher.ZtFile.html#JeremyAnsel_Xwa_ExePatcher_ZtFile_FromStream_System_IO_Stream_
   commentId: M:JeremyAnsel.Xwa.ExePatcher.ZtFile.FromStream(System.IO.Stream)
-  fullName: JeremyAnsel.Xwa.ExePatcher.ZtFile.FromStream(System.IO.Stream)
-  nameWithType: ZtFile.FromStream(Stream)
+  name.vb: FromStream(Stream)
+  fullName: JeremyAnsel.Xwa.ExePatcher.ZtFile.FromStream(System.IO.Stream?)
+  fullName.vb: JeremyAnsel.Xwa.ExePatcher.ZtFile.FromStream(System.IO.Stream)
+  nameWithType: ZtFile.FromStream(Stream?)
+  nameWithType.vb: ZtFile.FromStream(Stream)
 - uid: JeremyAnsel.Xwa.ExePatcher.ZtFile.FromStream*
   name: FromStream
   href: api/JeremyAnsel.Xwa.ExePatcher.ZtFile.html#JeremyAnsel_Xwa_ExePatcher_ZtFile_FromStream_
@@ -419,19 +434,22 @@ references:
   fullName: JeremyAnsel.Xwa.ExePatcher.ZtFile.PatchesCount
   nameWithType: ZtFile.PatchesCount
 - uid: JeremyAnsel.Xwa.ExePatcher.ZtFile.Save(System.IO.Stream)
-  name: Save(Stream)
+  name: Save(Stream?)
   href: api/JeremyAnsel.Xwa.ExePatcher.ZtFile.html#JeremyAnsel_Xwa_ExePatcher_ZtFile_Save_System_IO_Stream_
   commentId: M:JeremyAnsel.Xwa.ExePatcher.ZtFile.Save(System.IO.Stream)
-  fullName: JeremyAnsel.Xwa.ExePatcher.ZtFile.Save(System.IO.Stream)
-  nameWithType: ZtFile.Save(Stream)
+  name.vb: Save(Stream)
+  fullName: JeremyAnsel.Xwa.ExePatcher.ZtFile.Save(System.IO.Stream?)
+  fullName.vb: JeremyAnsel.Xwa.ExePatcher.ZtFile.Save(System.IO.Stream)
+  nameWithType: ZtFile.Save(Stream?)
+  nameWithType.vb: ZtFile.Save(Stream)
 - uid: JeremyAnsel.Xwa.ExePatcher.ZtFile.Save(System.String)
-  name: Save(string)
+  name: Save(string?)
   href: api/JeremyAnsel.Xwa.ExePatcher.ZtFile.html#JeremyAnsel_Xwa_ExePatcher_ZtFile_Save_System_String_
   commentId: M:JeremyAnsel.Xwa.ExePatcher.ZtFile.Save(System.String)
   name.vb: Save(String)
-  fullName: JeremyAnsel.Xwa.ExePatcher.ZtFile.Save(string)
+  fullName: JeremyAnsel.Xwa.ExePatcher.ZtFile.Save(string?)
   fullName.vb: JeremyAnsel.Xwa.ExePatcher.ZtFile.Save(String)
-  nameWithType: ZtFile.Save(string)
+  nameWithType: ZtFile.Save(string?)
   nameWithType.vb: ZtFile.Save(String)
 - uid: JeremyAnsel.Xwa.ExePatcher.ZtFile.Save*
   name: Save
