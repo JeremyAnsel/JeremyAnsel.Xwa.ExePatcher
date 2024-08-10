@@ -17,7 +17,7 @@ namespace JeremyAnsel.Xwa.ExePatcher
 
         public IList<Patch> Patches { get; } = new List<Patch>();
 
-        public static bool IsApplied(string exeFileName, Patch patch)
+        public static bool IsApplied(string? exeFileName, Patch? patch)
         {
             if (exeFileName == null)
             {
@@ -34,7 +34,7 @@ namespace JeremyAnsel.Xwa.ExePatcher
             return IsApplied(file, patch);
         }
 
-        public static bool IsApplied(Stream exeFile, Patch patch)
+        public static bool IsApplied(Stream? exeFile, Patch? patch)
         {
             if (exeFile == null)
             {
@@ -59,7 +59,7 @@ namespace JeremyAnsel.Xwa.ExePatcher
             return true;
         }
 
-        public static bool CanBeApplied(string exeFileName, Patch patch)
+        public static bool CanBeApplied(string? exeFileName, Patch? patch)
         {
             if (exeFileName == null)
             {
@@ -76,7 +76,7 @@ namespace JeremyAnsel.Xwa.ExePatcher
             return CanBeApplied(file, patch);
         }
 
-        public static bool CanBeApplied(Stream exeFile, Patch patch)
+        public static bool CanBeApplied(Stream? exeFile, Patch? patch)
         {
             if (exeFile == null)
             {
@@ -101,7 +101,7 @@ namespace JeremyAnsel.Xwa.ExePatcher
             return true;
         }
 
-        public static Patcher Read(string fileName)
+        public static Patcher Read(string? fileName)
         {
             if (fileName == null)
             {
@@ -113,7 +113,7 @@ namespace JeremyAnsel.Xwa.ExePatcher
             return Read(file);
         }
 
-        public static Patcher Read(Stream file)
+        public static Patcher Read(Stream? file)
         {
             if (file == null)
             {
@@ -125,24 +125,36 @@ namespace JeremyAnsel.Xwa.ExePatcher
             XmlDocument document = new();
             document.Load(file);
 
-            foreach (XmlNode patchNode in document.SelectNodes("/ArrayOfPatch/Patch"))
+            var nodes = document.SelectNodes("/ArrayOfPatch/Patch");
+
+            if (nodes is null)
+            {
+                return patcher;
+            }
+
+            foreach (XmlNode patchNode in nodes)
             {
                 Patch patch = new()
                 {
-                    Name = patchNode.Attributes.GetNamedItem("Name").Value
+                    Name = patchNode.Attributes?.GetNamedItem("Name")?.Value ?? string.Empty
                 };
 
-                XmlNode node = patchNode.Attributes.GetNamedItem("Description");
-                patch.Description = node?.Value;
+                XmlNode? node = patchNode.Attributes?.GetNamedItem("Description");
+                patch.Description = node?.Value ?? string.Empty;
 
-                foreach (XmlNode itemNode in patchNode.SelectNodes("Item"))
+                var patchNodes = patchNode.SelectNodes("Item");
+
+                if (patchNodes is not null)
                 {
-                    patch.Items.Add(new PatchItem
+                    foreach (XmlNode itemNode in patchNodes)
                     {
-                        OffsetString = itemNode.Attributes.GetNamedItem("Offset").Value,
-                        OldValuesString = itemNode.Attributes.GetNamedItem("From").Value,
-                        NewValuesString = itemNode.Attributes.GetNamedItem("To").Value
-                    });
+                        patch.Items.Add(new PatchItem
+                        {
+                            OffsetString = itemNode.Attributes?.GetNamedItem("Offset")?.Value ?? "0",
+                            OldValuesString = itemNode.Attributes?.GetNamedItem("From")?.Value ?? string.Empty,
+                            NewValuesString = itemNode.Attributes?.GetNamedItem("To")?.Value ?? string.Empty
+                        });
+                    }
                 }
 
                 patcher.Patches.Add(patch);
@@ -151,7 +163,7 @@ namespace JeremyAnsel.Xwa.ExePatcher
             return patcher;
         }
 
-        public void Write(string fileName)
+        public void Write(string? fileName)
         {
             if (fileName == null)
             {
@@ -163,7 +175,7 @@ namespace JeremyAnsel.Xwa.ExePatcher
             Write(file);
         }
 
-        public void Write(Stream file)
+        public void Write(Stream? file)
         {
             if (file == null)
             {
@@ -204,7 +216,7 @@ namespace JeremyAnsel.Xwa.ExePatcher
             document.Save(file);
         }
 
-        public void Apply(string exeFileName, bool writeNewValues)
+        public void Apply(string? exeFileName, bool writeNewValues)
         {
             if (exeFileName == null)
             {
@@ -216,7 +228,7 @@ namespace JeremyAnsel.Xwa.ExePatcher
             Apply(file, writeNewValues);
         }
 
-        public void Apply(Stream exeFile, bool writeNewValues)
+        public void Apply(Stream? exeFile, bool writeNewValues)
         {
             if (exeFile == null)
             {

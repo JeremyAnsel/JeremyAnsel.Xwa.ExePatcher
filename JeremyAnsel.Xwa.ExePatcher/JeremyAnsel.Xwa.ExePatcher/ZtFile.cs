@@ -12,11 +12,11 @@ namespace JeremyAnsel.Xwa.ExePatcher
 
         private string targetName = UnknownTargetName;
 
-        private string comment;
+        private string? comment;
 
-        public string FileName { get; private set; }
+        public string? FileName { get; private set; }
 
-        public string Name
+        public string? Name
         {
             get
             {
@@ -98,7 +98,7 @@ namespace JeremyAnsel.Xwa.ExePatcher
             get { return this.Patches.Count; }
         }
 
-        public string Comment
+        public string? Comment
         {
             get
             {
@@ -118,7 +118,7 @@ namespace JeremyAnsel.Xwa.ExePatcher
             }
         }
 
-        public static ZtFile Create(string unmodifiedFile, string modifiedFile)
+        public static ZtFile Create(string? unmodifiedFile, string? modifiedFile)
         {
             if (unmodifiedFile == null)
             {
@@ -136,7 +136,7 @@ namespace JeremyAnsel.Xwa.ExePatcher
             return Create(unmodifiedBytes, modifiedBytes);
         }
 
-        public static ZtFile Create(byte[] unmodifiedBytes, byte[] modifiedBytes)
+        public static ZtFile Create(byte[]? unmodifiedBytes, byte[]? modifiedBytes)
         {
             if (unmodifiedBytes == null)
             {
@@ -178,7 +178,7 @@ namespace JeremyAnsel.Xwa.ExePatcher
             return zt;
         }
 
-        public static ZtFile FromFile(string fileName)
+        public static ZtFile FromFile(string? fileName)
         {
             if (fileName == null)
             {
@@ -194,7 +194,7 @@ namespace JeremyAnsel.Xwa.ExePatcher
             return zt;
         }
 
-        public static ZtFile FromStream(Stream stream)
+        public static ZtFile FromStream(Stream? stream)
         {
             if (stream == null)
             {
@@ -230,7 +230,7 @@ namespace JeremyAnsel.Xwa.ExePatcher
             return zt;
         }
 
-        public void Save(string fileName)
+        public void Save(string? fileName)
         {
             if (fileName == null)
             {
@@ -244,7 +244,7 @@ namespace JeremyAnsel.Xwa.ExePatcher
             this.FileName = fileName;
         }
 
-        public void Save(Stream stream)
+        public void Save(Stream? stream)
         {
             if (stream == null)
             {
@@ -272,7 +272,7 @@ namespace JeremyAnsel.Xwa.ExePatcher
             }
         }
 
-        public void Apply(string fileName)
+        public void Apply(string? fileName)
         {
             if (fileName == null)
             {
@@ -286,7 +286,7 @@ namespace JeremyAnsel.Xwa.ExePatcher
             File.WriteAllBytes(fileName, bytes);
         }
 
-        public void Apply(byte[] bytes)
+        public void Apply(byte[]? bytes)
         {
             if (bytes == null)
             {
@@ -312,7 +312,7 @@ namespace JeremyAnsel.Xwa.ExePatcher
             }
         }
 
-        private void Add(int offset, byte[] patch)
+        private void Add(int offset, byte[]? patch)
         {
             if (offset < 0)
             {

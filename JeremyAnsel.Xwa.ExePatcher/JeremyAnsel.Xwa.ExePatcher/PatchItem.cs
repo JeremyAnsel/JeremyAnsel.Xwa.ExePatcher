@@ -1,4 +1,5 @@
-﻿using System.Globalization;
+﻿using System;
+using System.Globalization;
 using System.Linq;
 
 namespace JeremyAnsel.Xwa.ExePatcher
@@ -25,9 +26,9 @@ namespace JeremyAnsel.Xwa.ExePatcher
 
         public int Offset { get; set; }
 
-        public byte[] OldValues { get; set; }
+        public byte[] OldValues { get; set; } = Array.Empty<byte>();
 
-        public byte[] NewValues { get; set; }
+        public byte[] NewValues { get; set; } = Array.Empty<byte>();
 
         private static byte[] StringToByteArray(string s)
         {
