@@ -299,7 +299,11 @@ namespace JeremyAnsel.Xwa.ExePatcher
             byte[] buffer = new byte[bytes.Length];
 
             file.Seek(offset, SeekOrigin.Begin);
-            file.Read(buffer, 0, bytes.Length);
+
+            if (file.Read(buffer, 0, bytes.Length) != bytes.Length)
+            {
+                return false;
+            }
 
             for (int i = 0; i < bytes.Length; i++)
             {
